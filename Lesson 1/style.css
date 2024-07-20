@@ -3,13 +3,26 @@ p {
 }
 
 .box {
-    border: 2px solid black;
+    border: 3px solid rgb(193, 137, 137);
+    border-radius: 9px;
 }
 
-.box>p {
-    color: green;
+.summer {
+    color: red;
+    text-decoration: double;
 }
 
-li {
-    background-color: coral;
+.winter {
+    color: blue;
 }
+
+ul>li {
+    color: black;
+    background-color: bisque;
+}
+
+ol>li {
+    color: black;
+    background-color: floralwhite;
+}
+
