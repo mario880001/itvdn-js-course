@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body>
+    <script>
+        // alert("Зараз " + new Date().getFullYear() + " рік");
+        // let birthYear = +prompt("Введіть рік народження");
+        // alert(new Date().getFullYear() - birthYear);
+
+
+        let currentYear = new Date().getFullYear();
+        let birthYear = +prompt("Введіть рік народження");
+        let currenttAge = currentYear - birthYear;
+
+        const adultAge = 18;
+        if(currenttAge >= adultAge) {
+            alert("Повнолітній користувач");
+        }
+        else{
+            alert("Неповнолітній користувач");
+        }
+
+    </script>
+</body>
+</html>
