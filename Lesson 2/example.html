@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Код з файлом JS</title>
+</head>
+<body>
+    <p id="txt">Місто під сонцем!</p>
+    <button id="btn">Треба натиснути!</button>
+    <!-- <button onclick="alert('Так вже ніхто не робить')">Натискай жвавіше</button> -->
+    <script src="example.js">
+    </script>
+
+    <script>
+        alert("Hello");
+        // document.querySelector("#btn").onclick = function(){
+        //     alert("тІт ТаК");
+        // }
+        document.querySelector("#btn").onclick = function(){
+            // document.querySelector("#txt").innerHTML = "Нарешті ти це зробив, хахаха!)";
+            // document.querySelector("#txt").style.color = "red";
+            let x = document.querySelector("#txt");
+            x.innerHTML = "Тільки кнопку не зламай коли тиснеш";
+            x.style.color = "blue";
+        } 
+    </script>
+</body>
+</html>
