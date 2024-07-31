@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        .tempCtoF{
+            color: blue;
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+        .tempCtoF:hover{
+            background: red;
+            font-size: 20px;
+        }
+
+        .tempFtoC{
+            color: rgb(255, 0, 0);
+            border: 2px solid rgb(0, 0, 255);
+            border-radius: 5px;
+        }
+        .tempFtoC:hover{
+            background: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Отримати значення</h1>
+        <button class="tempCtoF">З Цельсія у Фаренгейт</button>
+        <button class="tempFtoC">З Фаренгейта у Цельсій</button>
+    </div>
+    <script>
+        document.querySelector(".tempCtoF").onclick = function(){
+            let temp = +prompt("Температура з C у F");
+            alert(9/5 * temp + 32 + "F");
+        }
+        document.querySelector(".tempFtoC").onclick = function(){
+            let temp = +prompt("Температура з F у C");
+            alert(5/9 * (temp - 32) + "C");
+        }
+    </script>
+</body>
+
+</html>

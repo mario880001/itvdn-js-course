@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task3</title>
+    </head>
+
+    <body>
+        <script>
+            // У що переводити?
+            let tempFC = prompt("Отримати температуру в цельсіях введіть C або F по Фаренгейту");
+
+            // Отримання температури від користувача
+            let temp = +prompt("Введіть необхідну температуру для перетворення");
+            console.log(temp);
+
+            // Вивидення температури
+            if(tempFC == "C") {
+                let tempC = alert(5/9 *(temp - 32) + "C");
+            }
+            else{
+                let tempF = alert(9/5 * temp + 32 + "F");
+            }
+            
+        </script>
+    </body>
+
+    </html>
