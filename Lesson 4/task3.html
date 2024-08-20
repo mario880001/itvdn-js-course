@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // let value = prompt("Введіть бажане число");
+    // let yourNumber = Number(value);
+    // let x = 0;
+
+    // for (let i = 0; i <= yourNumber; i++) {
+    //     x = x + i;
+    // }
+
+    // console.log(`Загальна сума від 0 до ${yourNumber} складає ${x}`);
+    // console.log(x);
+
+
+    // let a = prompt("Введіть початок значення");
+    // let a1 = +a;
+    // console.log(typeof a1);
+
+    // let b = prompt("Введіть кінець значення");
+    // let b1 = +b;
+    // console.log(typeof b1);
+
+    // let sum = 0;
+
+    // for (let i = a1; i <= b1; i++) {
+    //     sum = sum + i;
+    // }
+
+    // console.log(`Загальна сума від ${a} до ${b} складає ${sum}`);
+    // console.log(sum);
+
+    function getValue(message) {
+
+        while (true) {
+            let value = prompt(message);
+            //перевірка на валідність, чи є числом
+            let isValid = !isNaN(value) && value !== "" && value !== null && value !== " ";
+            console.log(isValid);
+            if (isValid) {
+                return Number(value);
+            }
+        }
+
+        
+    }
+
+    let start = getValue("Введіть початок діапазону");
+    let end = getValue("Введіть кінець діапазону");
+
+
+    if(end < start) {
+        alert("Кінцеве число не може бути меньшим за початкове");
+    } else {
+        let sumValue = 0;
+        for (let i = start; i <= end; i++) {
+            sumValue = sumValue + i;
+        } 
+    
+        console.log(sumValue);
+        console.log(`Сума значень в діапазоні від ${start} до ${end} дорівнюює ${sumValue}`);
+
+    }
+
+</script>
+
+</html>

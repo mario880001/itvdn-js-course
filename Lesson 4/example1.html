@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Lesson 4</h1>
+    </div>
+
+    <script>
+        let a = 20;
+        let b = 40;
+
+        if (a > b) {
+            console.log("Дійсно 20 менше 40");
+            console.log("Це дісно так"); // якщо буде true то два або більше рядків інструкції спрацюють, так як вони об'єднані фігурними дужками
+        }
+
+        if (a > b)
+            console.log("Дійсно 20 менше 40!!!");
+        console.log("Це дісно так!!!"); // цей рядок в любому випадку виконаеться, так як інструкція не взята у фігурні дужки, в такому випадку виконаеться тільки перша іеструкція
+        // але правельніше писати з фігурними дужками
+
+
+        let c = 7000;
+        if (c > 5000) {
+            console.log("Ви отримуєте знижку");
+        } else {
+            console.log("Знижки немає");
+        }
+
+        // тернарний оператор
+        let sale = c > 5000 ? "Ви отримуєте знижку" : "Знижки немає";
+        console.log(sale);
+    </script>
+</body>
+
+</html>

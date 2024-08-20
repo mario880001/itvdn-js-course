@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+
+<body>
+
+    <script>
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+        console.log("Число компьютера", randomNumber);
+        let gameOver = false;
+
+        // while (!gameOver) {
+        //     let valueUser = Number(prompt("Щоб вгадати число, введіть значення", "від 1 до 100"));
+        //     // console.log("Число користувача", valueUser);
+        //     // console.log(typeof valueUser);
+
+        //     if (valueUser > 100) {
+        //         alert("Ви ввели дуже велике значення, введене число має бути менше 101");
+        //     } else if (valueUser == randomNumber) {
+        //         alert("Ви вгадали число");
+        //         gameOver = true;
+        //     } else if (valueUser < randomNumber) {
+        //         alert("Число повинно бути більшим");
+        //     } else if (valueUser > randomNumber) {
+        //         alert("Число повинно бути меньше");
+        //     }
+        // }
+
+
+        // while (true) {
+        //     let valueUser = Number(prompt("Щоб вгадати число, введіть значення", "від 1 до 100"));
+
+        //     if (valueUser > 100) {
+        //         alert("Ви ввели дуже велике значення, введене число має бути менше 101");
+        //     } else if (valueUser == randomNumber) {
+        //         alert("Ви вгадали число");
+        //         break;
+        //     } else if (valueUser < randomNumber) {
+        //         alert("Число повинно бути більшим");
+        //     } else if (valueUser > randomNumber) {
+        //         alert("Число повинно бути меньше");
+        //     }
+        // }
+
+
+        while (gameOver == false) {
+            let valueUser = Number(prompt("Щоб вгадати число, введіть значення", "від 1 до 100"));
+
+            if (valueUser > 100) {
+                alert("Ви ввели дуже велике значення, введене число має бути менше 101");
+            } else if (valueUser == randomNumber) {
+                alert("Ви вгадали число " + randomNumber);
+                break;
+            } else if (valueUser < randomNumber) {
+                alert("Число повинно бути більшим");
+            } else if (valueUser > randomNumber) {
+                alert("Число повинно бути меньше");
+            }
+        }
+    </script>
+</body>
+
+</html>

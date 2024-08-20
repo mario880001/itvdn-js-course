@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+
+<body>
+    <script>
+        // let x = 10;
+
+        // console.log("Це номер " + x);
+        // console.log("Це", x);
+        // console.log("Було зроблено " + x + " спроб.");
+        // console.log("Було зроблено", x + " спроб.");
+        // console.log("Було зроблено", x ,"спроб.");
+        // console.log(`Було зроблено ${x + 1} спроб.`);
+
+        // Паліндром
+        // let value = "abccba";
+        // console.log(value[4]); //відобразить четвертий символ (перший символ починаеться з 0)
+        // console.log(value.length); //відобразить кількість символів у змінній
+        // let len = value.length;
+        // console.log(len);
+
+        // let isPalindrome;
+        
+        // for (let i = 0; i < len / 2; i++) {
+            
+        //     if (value[i] !== value[len - 1 -i]) {
+        //         isPalindrome = false;
+        //         break;
+        //     } else {
+        //         isPalindrome = true;
+        //     }
+
+        // }
+
+        // if (isPalindrome) {
+        //     console.log("Значення " + value + " є паліндромом");
+        // } else {
+        //     console.log("Значення " + value + " не є паліндромом");
+        // }
+
+        // Паліндром з великими буквами та пробілам
+        let initialValue = "І що сало ласощі";
+        let value = initialValue.replace(/\s+/g, "").toLowerCase();
+        let len = value.length; //довжина символів
+        console.log(len);
+        console.log(value);
+
+        let isPalindrome;
+        
+        for (let i = 0; i < len / 2; i++) {
+            
+            if (value[i] !== value[len - 1 -i]) {
+                isPalindrome = false; //не паліндром
+                break;
+            } else {
+                isPalindrome = true;
+            }
+
+        }
+        
+        if (isPalindrome) {
+            console.log("Значення " + initialValue + " - є паліндромом");
+        } else {
+            console.log("Значення " + initialValue + " - не є паліндромом");
+        }
+        // </script>
+</body>
+
+</html>
